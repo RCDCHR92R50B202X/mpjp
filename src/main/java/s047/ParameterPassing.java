@@ -7,6 +7,19 @@ public class ParameterPassing {
         parameter += 1;
         System.out.println("parameter is " + parameter);
     }
+    
+    static int square(int input) {
+       input *= input; 
+       System.out.println("Input is" + input);
+    	return input;
+    }
+    
+    static int triple(int value) {
+    	value *= 3; 
+    	System.out.println("Value is" + value);
+    	return value; 
+    	
+    }
 
     static void immutableReference(String parameter) {
         if (parameter == null) {
@@ -54,6 +67,13 @@ public class ParameterPassing {
 
         System.out.println("primitiveValue has been initialized to " + primitiveValue);
         primitive(primitiveValue);
+        
+        int result = square(primitiveValue);
+        System.out.println("primitiveValue is still " + result);
+        
+        result = triple(primitiveValue);
+        System.out.println("primitiveValue tripled is still " + result);
+        
         System.out.println("primitiveValue is still " + primitiveValue);
 
         String string = "Hi";
@@ -68,7 +88,7 @@ public class ParameterPassing {
         reference(referenceValue);
         System.out.println("referenceValue now is " + referenceValue);
 
-        int array[] = { 42 };
+        int[] array = { 42 };
 
         System.out.println("array[0] is " + array[0]);
         reference(array);

@@ -4,7 +4,7 @@ public class Primitive {
     public static void main(String[] args) {
         boolean flag = false;
         System.out.println(flag);
-
+     
         char c = 'A';
         System.out.println(c);
 

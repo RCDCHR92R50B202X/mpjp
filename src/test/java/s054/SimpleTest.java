@@ -13,6 +13,6 @@ class SimpleTest {
 
         int result = simple.negate(value);
 
-        assertThat(result, equalTo(-42));
+        assertThat(result, equalTo(42));
     }
 }
