@@ -7,90 +7,90 @@ import org.junit.jupiter.api.Test;
 
 class S58Test {
 
-    @Test
-    void checkSignPositive() {
-        String actual = S58.checkSign(42);
+	@Test
+	void checkSignPositive() {
+		String actual = S58.checkSign(42);
 
-        assertThat(actual, is("positive"));
-    }
+		assertThat(actual, is("positive"));
+	}
 
-    @Test
-    void checkSignNegative() {
-        String actual = S58.checkSign(-42);
+	@Test
+	void checkSignNegative() {
+		String actual = S58.checkSign(-42);
 
-        assertThat(actual, is("negative"));
-    }
+		assertThat(actual, is("negative"));
+	}
 
-    @Test
-    void checkSignZero() {
-        String actual = S58.checkSign(0);
+	@Test
+	void checkSignZero() {
+		String actual = S58.checkSign(0);
 
-        assertThat(actual, is("zero"));
-    }
+		assertThat(actual, is("zero"));
+	}
 
-    @Test
-    void isOddTrue() {
-        boolean actual = S58.isOdd(19);
+	@Test
+	void isOddTrue() {
+		boolean actual = S58.isOdd(19);
 
-        assertThat(actual, is(true));
-    }
+		assertThat(actual, is(true));
+	}
 
-    @Test
-    void isOddFalse() {
-        boolean actual = S58.isOdd(-12);
+	@Test
+	void isOddFalse() {
+		boolean actual = S58.isOdd(-12);
 
-        assertThat(actual, is(false));
-    }
+		assertThat(actual, is(false));
+	}
 
-    @Test
-    void asWordZero() {
-        String actual = S58.asWord(0);
+	@Test
+	void asWordZero() {
+		String actual = S58.asWord(0);
 
-        assertThat(actual, is("zero"));
-    }
+		assertThat(actual, is("zero"));
+	}
 
-    @Test
-    void asWordOther() {
-        String actual = S58.asWord(42);
+	@Test
+	void asWordOther() {
+		String actual = S58.asWord(42);
 
-        assertThat(actual, is("other"));
-    }
+		assertThat(actual, is("other"));
+	}
 
-    @Test
-    void voteLowA() {
-        char actual = S58.vote(90.01);
+	@Test
+	void voteLowA() {
+		char actual = S58.vote(90.01);
 
-        assertThat(actual, is('A'));
-    }
+		assertThat(actual, is('A'));
+	}
 
-    @Test
-    void voteTopB() {
-        char actual = S58.vote(90);
+	@Test
+	void voteTopB() {
+		char actual = S58.vote(90);
 
-        assertThat(actual, is('B'));
-    }
+		assertThat(actual, is('B'));
+	}
 
-    @Test
-    void isLeapTrue() {
-        boolean actual = S58.isLeapYear(2020);
+	@Test
+	void isLeapTrue() {
+		boolean actual = S58.isLeapYear(2020);
 
-        assertThat(actual, is(true));
-    }
+		assertThat(actual, is(true));
+	}
 
-    @Test
-    void isLeapFalse() {
-        boolean actual = S58.isLeapYear(1900);
+	@Test
+	void isLeapFalse() {
+		boolean actual = S58.isLeapYear(1900);
 
-        assertThat(actual, is(false));
-    }
+		assertThat(actual, is(false));
+	}
 
-    @Test
-    void sortPlain() {
-        int[] actual = S58.sort(3, 2, 1);
+	@Test
+	void sortPlain() {
+		int[] actual = S58.sort(3, 2, 1);
 
-        assertThat(actual.length, is(3));
-        assertThat(actual[0], is(1));
-        assertThat(actual[1], is(2));
-        assertThat(actual[2], is(3));
-    }
+		assertThat(actual.length, is(3));
+		assertThat(actual[0], is(1));
+		assertThat(actual[1], is(2));
+		assertThat(actual[2], is(3));
+	}
 }
