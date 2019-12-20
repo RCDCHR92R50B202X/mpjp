@@ -13,6 +13,12 @@ public class Wrapper {
         System.out.println("Is 'c' a lowercase letter? " + Character.isLowerCase('c'));
         System.out.println("Is 'W' an uppercase letter? " + Character.isUpperCase('W'));
         System.out.println("'c' to uppercase " + Character.toUpperCase('c'));
+        // String Builder sb = new StringBuilder();
+        // String s = "ciao";
+        // Character.toUpperCase(s.charAt(0));
+        // sb.append (Character.toUpperCase(s.charAt(0));
+        // sb.append (s.substring(1));
+        //syso;
         System.out.println("'W' to lowercase " + Character.toLowerCase('W'));
 
         System.out.println(Integer.parseInt("42"));

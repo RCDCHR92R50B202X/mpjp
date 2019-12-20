@@ -3,7 +3,7 @@ package s073;
 public class Cat extends Mammal {
     private Tail tail;
 
-    public Cat(int gestationDays, int tailLen) {
+    public Cat(int gestationDays, int tailLen) { 
         super(gestationDays);
         this.tail = new Tail(tailLen);
     }

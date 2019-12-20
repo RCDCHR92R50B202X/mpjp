@@ -50,12 +50,9 @@ public class S60 {
 		int len = s.length();
 
 		for (int i = 0; i < len; i++) {
-			if (s.charAt(i) != 'a') {
-			} else if (s.charAt(i) != 'e') {
-			} else if (s.charAt(i) != 'i') {
-			} else if (s.charAt(i) != 'o') {
-			} else if (s.charAt(i) != 'u') {
-			} else {
+			if ((s.charAt(i) != 'a') && (s.charAt(i) != 'e') && (s.charAt(i) != 'i') && (s.charAt(i) != 'o')
+					&& (s.charAt(i) != 'u')) {
+
 				t.append(s.charAt(i));
 			}
 
