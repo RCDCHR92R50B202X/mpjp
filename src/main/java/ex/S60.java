@@ -1,14 +1,7 @@
 package ex;
 
 public class S60 {
-	/**
-	 * Reverse a string
-	 * 
-	 * @param <s>
-	 * 
-	 * @param s
-	 * @return the input reversed
-	 */
+
 	public static <s> String reverse(String s) {
 
 		StringBuilder t = new StringBuilder();
@@ -21,12 +14,6 @@ public class S60 {
 		return t.toString();
 	}
 
-	/**
-	 * Check if the parameter is a palindrome
-	 * 
-	 * @param s
-	 * @return true if the parameter is a palindrome
-	 */
 	public static boolean isPalindrome(String s) {
 
 		int len = s.length();
@@ -39,12 +26,6 @@ public class S60 {
 		return true;
 	}
 
-	/**
-	 * Remove vowels from the parameter
-	 * 
-	 * @param s
-	 * @return a string, same of input but without vowels
-	 */
 	public static String removeVowels(String s) {
 		StringBuilder t = new StringBuilder();
 		int len = s.length();
@@ -71,39 +52,41 @@ public class S60 {
 		return 0;
 	}
 
-	/**
-	 * Reverse an array of integers
-	 * 
-	 * @param data
-	 * @return a new array holding the same elements of input, in reversed order
-	 */
 	public static int[] reverse(int[] data) {
 		int[] result = new int[0];
 
-		// TODO
+		for (int i = data.length - 1, j = 0; i >= 0; i--) {
+
+			result[j] = data[i];
+
+		}
 
 		return result;
 	}
 
-	/**
-	 * Calculate the average
-	 * 
-	 * @param data
-	 * @return the average
-	 */
 	public static double average(int[] data) {
-		// TODO
-		return 0;
+		double sum = 0;
+
+		for (int cur : data) {
+
+			sum += cur;
+
+		}
+
+		double result = sum / data.length;
+		return result;
 	}
 
-	/**
-	 * Find the largest value
-	 * 
-	 * @param data
-	 * @return the largest value
-	 */
 	public static int max(int[] data) {
-		// TODO
-		return 0;
+
+		int result = Integer.MIN_VALUE;
+
+		for (int i = 0; i < data.length; i++) {
+			if (data[i] > result) {
+				result = data[i];
+			}
+		}
+
+		return result;
 	}
 }
